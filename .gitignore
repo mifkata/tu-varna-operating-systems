@@ -1,2 +1,4 @@
 .devcontainer/.home/
 .DS_Store
+*.o
+*.bin
