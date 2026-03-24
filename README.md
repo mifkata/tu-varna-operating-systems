@@ -26,6 +26,7 @@
 ## Make команди
 
 ```sh
+make devcontainer   # стартира dev контейнера и отваря zsh терминал
 make build <N>      # компилация на задача N (напр. make build 1)
 make run <N>        # стартиране + компилация на задача N (напр. make run 1)
 ```

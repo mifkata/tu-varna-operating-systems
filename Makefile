@@ -6,7 +6,10 @@ build:
 run:
 	make -C app$(N) run
 
+devcontainer:
+	make -C .devcontainer
+
 %:
 	@true
 
-.PHONY: build run
+.PHONY: build run devcontainer

@@ -8,7 +8,6 @@ default: start
 	@$(COMPOSE) exec -u dev $(SERVICE) zsh
 
 start:
-	@mkdir -p .home
 	@$(COMPOSE) up -d
 
 stop:
