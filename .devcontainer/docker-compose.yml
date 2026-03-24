@@ -1,0 +1,15 @@
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tu-varna-os-dev
+    network_mode: host
+    user: dev
+    volumes:
+      - ..:/workspace:cached
+      - ./.home:/home/dev:cached
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    command: sleep infinity
