@@ -7,7 +7,7 @@ int main(void)
     sem_t sem_empty = sem_init(0);
     sem_t sem_capitalized = sem_init(2);
 
-    for (char c = 'a'; c <= 'z'; c++)
+    for (char c = START; c <= END; c++)
     {
         PS(sem_capitalized);
         printf("Консумирано: %c\n", buf[0]);

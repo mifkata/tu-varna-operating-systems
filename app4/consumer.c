@@ -8,7 +8,7 @@ int main(void)
     volatile int *lock = (volatile int *)mem;
     char *buf = (char *)(lock + 1);
 
-    for (char c = 'a'; c <= 'z'; c++)
+    for (char c = START; c <= END; c++)
     {
         while (buf[0] == 0 || testandset(lock));
         printf("Консумирано: %c\n", buf[0]);

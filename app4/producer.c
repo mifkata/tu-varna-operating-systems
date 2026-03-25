@@ -11,7 +11,7 @@ int main(void)
     *lock = 0;
     buf[0] = 0;
 
-    for (char c = 'a'; c <= 'z'; c++)
+    for (char c = START; c <= END; c++)
     {
         while (testandset(lock));
         buf[0] = c;

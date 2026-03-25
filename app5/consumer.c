@@ -7,7 +7,7 @@ int main(void)
     sem_t sem_empty = sem_init(0);
     sem_t sem_full = sem_init(1);
 
-    for (char c = 'a'; c <= 'z'; c++)
+    for (char c = START; c <= END; c++)
     {
         PS(sem_full);
         printf("Консумирано: %c\n", buf[0]);

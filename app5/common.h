@@ -4,5 +4,7 @@
 #include "../shared/shared.h"
 
 #define SEED_ID 23623452
+#define START 'a'
+#define END 'z'
 
 #endif

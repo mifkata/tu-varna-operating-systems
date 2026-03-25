@@ -11,7 +11,7 @@ int main(void)
     sem_set(sem_produced, 0);
     sem_set(sem_capitalized, 0);
 
-    for (char c = 'a'; c <= 'z'; c++)
+    for (char c = START; c <= END; c++)
     {
         PS(sem_empty);
         buf[0] = c;

@@ -6,7 +6,7 @@ int main(void)
 {
     char *buf = (char *)getmem(SEED_ID);
 
-    for (char c = 'a'; c <= 'z'; c++)
+    for (char c = START; c <= END; c++)
     {
         printf("Консумирано: %c\n", buf[0]);
     }

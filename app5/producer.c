@@ -9,7 +9,7 @@ int main(void)
     sem_set(sem_empty, 1);
     sem_set(sem_full, 0);
 
-    for (char c = 'a'; c <= 'z'; c++)
+    for (char c = START; c <= END; c++)
     {
         PS(sem_empty);
         buf[0] = c;

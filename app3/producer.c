@@ -6,7 +6,7 @@ int main(void)
 {
     char *buf = (char *)getmem(SEED_ID);
 
-    for (char c = 'a'; c <= 'z'; c++)
+    for (char c = START; c <= END; c++)
     {
         buf[0] = c;
         printf("Произведено: %c\n", c);
