@@ -1,5 +1,5 @@
 all: clean
-	gcc -o app7.bin main.c -lpthread
+	gcc -O0 -o app7.bin main.c -lpthread
 
 run:
 	@test -f app7.bin || $(MAKE) all
