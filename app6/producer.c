@@ -19,8 +19,5 @@ int main(void)
         VS(sem_produced);
     }
 
-    sem_remove(sem_empty);
-    sem_remove(sem_produced);
-    sem_remove(sem_capitalized);
     return 0;
 }
